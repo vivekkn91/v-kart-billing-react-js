@@ -1,12 +1,10 @@
-import "./App.css";
 import React from "react";
-import Navigator from "./navigator";
+import Form from "./Loginform";
 
-function App() {
+function loginForm_overview() {
   return (
     <>
-      <Navigator />
-      {/* <div className=" split left">
+      <div className=" split left">
         <div class="centered">
           <h2 style={{ fontSize: "50px", margin: "-20px auto" }}>V-kart</h2>
           <p>billing app</p>
@@ -16,9 +14,8 @@ function App() {
         <div class="centeredright">
           <Form />
         </div>
-      </div> */}
+      </div>
     </>
   );
 }
-
-export default App;
+export default loginForm_overview;

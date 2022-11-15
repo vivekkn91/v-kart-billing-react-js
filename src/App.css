@@ -1,38 +1,108 @@
 .App {
+  display: flex;
+}
+body {
+  background-color: #00ffab;
+}
+.left {
+  left: 0;
+  color: rgb(255, 255, 255);
+  background-color: #14c38e;
+}
+.dsd {
+  width: 55%;
+}
+.rowgrid {
+  display: grid;
+  font-size: 0;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+.right {
+  right: 0;
+  background-color: #00ffab;
+}
+.right2 {
+  right: 0;
+  background: #14c38e;
+}
+.split {
+  height: 100%;
+  width: 70%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.centeredright {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
+.newmo-card {
+  width: 150px;
+  height: 150px;
+  border-radius: 22px;
+  text-align: center;
+  color: #000;
+  font-size: 14px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  background: #14c38e;
+  text-transform: capitalize;
+  font-weight: 500;
+
+  flex-grow: 1;
+
+  margin: 10px;
+
+  /* box-shadow: 20px 20px 60px #11a679, -20px -20px 60px #17e0a3; */
 }
+.newmo-card:last-child {
+  margin-bottom: 10px;
+}
+.newmo-card:active {
+  width: 150px;
+  height: 150px;
+  border-radius: 22px;
+  text-align: center;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  text-transform: capitalize;
+  font-weight: 500;
+  background: #14c38e;
+  box-shadow: inset 20px 20px 60px #11a679, inset -20px -20px 60px #17e0a3;
+}
+.splitdash {
+  height: 100%;
+  width: 96%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.flex-display {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.foo {
+  background: rgba(64, 247, 52, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  /* background-color: aqua; */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 400px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
